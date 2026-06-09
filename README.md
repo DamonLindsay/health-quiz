@@ -1,48 +1,47 @@
-# health-quiz
+# Health Wellness Assessment
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue 3 + TypeScript health quiz app built as part of a professional internship placement with Sophus Health.
 
-## Recommended IDE Setup
+Users complete a 16-question lifestyle assessment across four health categories and receive a personalised wellness score with recommendations.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Recommended Browser Setup
+- 16 questions across 4 health categories — Diet & Nutrition, Exercise & Activity, Sleep Quality, Stress Management
+- Animated slide transitions between questions
+- Progress bar with colour coding per category
+- Back button to review and change answers
+- Results screen with overall score, category breakdown and personalised recommendations
+- Fully responsive and mobile-friendly
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Tech Stack
 
-## Type Support for `.vue` Imports in TS
+- Vue 3 (Composition API, script setup)
+- TypeScript
+- Vue Router
+- Tailwind CSS
+- Vite
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Getting Started
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Project Structure
 
-```sh
-npm run build
-```
+src/
+├── data/
+│ └── questions.ts # Question data and TypeScript interfaces
+├── views/
+│ ├── WelcomeView.vue # Landing screen
+│ ├── QuizView.vue # Quiz with progress and transitions
+│ └── ResultsView.vue # Results, breakdown and recommendations
+├── router/
+│ └── index.ts # Vue Router config
+└── assets/
+└── main.css # Tailwind import and global styles
 
-### Lint with [ESLint](https://eslint.org/)
+## Built With
 
-```sh
-npm run lint
-```
+This project was built to demonstrate proficiency in Vue 3, TypeScript, Vue Router, Tailwind CSS and Vite.
